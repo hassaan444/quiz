@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+     <!-- Create a age calculator that takes date of birth of user and shows age
+    in years, months and days -->
+    <h3>BIRTH DAYS CALCULATOR</h3>
+    <H5>enter birth year</H5>
+    <input type="number" id="year">
+    <h5>enter birth month</h5>
+    <input type="number" id="month"/>
+    <h5>enter birth day</h5>
+    <input type="number" id="day"/><br><br>
+    <button onclick="cal()">submit</button>
+    <script>
+        function cal(){
+            var byear=document.getElementById("year").value;
+            var bmonth=document.getElementById("month").value;
+            var bday=document.getElementById("day").value;
+            var byear=2022-byear;
+            var bmonth=12-bmonth;
+            var bday=31-bday;
+            document.write("you are " + byear + " years " + bmonth + " months and " + bday + " days old" );
+             
+        }
+    </script>
+  </body>
+</html>
